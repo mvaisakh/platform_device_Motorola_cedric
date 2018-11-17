@@ -27,7 +27,6 @@ import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.hardware.TriggerEventListener;
-import android.util.Log;
 
 public class SensorHelper {
     private static final String TAG = "MotoActions";
@@ -45,7 +44,7 @@ public class SensorHelper {
 
     public SensorHelper(Context context) {
         mContext = context;
-        mSensorManager = (SensorManager) mContext .getSystemService(Context.SENSOR_SERVICE);
+        mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         dumpSensorsList();
     }
 
